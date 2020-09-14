@@ -2,6 +2,9 @@
 // of the form: "$PASS_FOLDER/base64-url(serverURL)/username". We base64-url
 // encode the serverURL, because under the hood pass uses files and folders, so
 // /s will get translated into additional folders.
+
+// +build linux openbsd
+
 package pass
 
 import (
